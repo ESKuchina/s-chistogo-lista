@@ -38,16 +38,15 @@ blockquote {
 }
 
 .header {
-  height: 132px;
   display: flex;
   flex-flow: row nowrap;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: start;
   padding: 24px 20px;
 }
 
 .header__logo {
-  display: flex;
+  width: 79px;
 }
 
 .header__menu {
@@ -66,8 +65,11 @@ blockquote {
   color: #f5f5f5;
 }
 
+.header__menu-item_active {
+  text-decoration-line: none;
+}
+
 .cover {
-  min-height: 221px;
   padding: 7px 20px 0px;
   background-image: url(../images/cover.svg);
   background-repeat: no-repeat;
@@ -153,7 +155,7 @@ blockquote {
 
 .content-section__list-item {
   line-height: 135%;
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 .content-section__list-accent {
@@ -195,12 +197,12 @@ blockquote {
 }
 
 .card__author-photo {
-  height: 100px;
   width: 100px;
 }
 
 .card__author-name {
   font-weight: 700;
+  line-height: 135%;
 }
 
 .card__content {
